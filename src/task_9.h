@@ -1,5 +1,5 @@
-#ifndef TASK_1_H
-#define TASK_1_H
+#ifndef TASK_9_H
+#define TASK_9_H
 
 #include <iostream>
 #include <vector>
@@ -18,9 +18,9 @@ public:
 
     RedBlackTree() : root(nullptr) {}
 
-    void Insert(int x);
-    void printTreeRecursively(Node* node, std::string colorStr);
-    void printTree();
+    void Insert(int parent, int child);
+    int countNodes(Node* node);
+    void printSubtreeNodeCount();
 };
 
 #endif

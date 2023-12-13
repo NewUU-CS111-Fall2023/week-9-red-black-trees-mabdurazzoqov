@@ -1,5 +1,5 @@
-#ifndef TASK_1_H
-#define TASK_1_H
+#ifndef TASK_3_H
+#define TASK_3_H
 
 #include <iostream>
 #include <vector>
@@ -21,6 +21,11 @@ public:
     void Insert(int x);
     void printTreeRecursively(Node* node, std::string colorStr);
     void printTree();
+    void leftRotate(Node* x);
+    void rightRotate(Node* x);
+    void deleteNode(int x);
+    void insertFix(Node* x);
+    void deleteFix(Node* x);
 };
 
 #endif
